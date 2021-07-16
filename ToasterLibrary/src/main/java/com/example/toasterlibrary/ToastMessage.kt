@@ -18,6 +18,7 @@ object ToastMessage {
             Request.Method.GET, url, null,
             { response ->
                 result = response.getString("eye_color")
+                Log.d("EYE COLOR", result)
             },
             {
                 Log.d("error", it.localizedMessage)
